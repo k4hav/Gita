@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="description" content="Bhagavad Gita in Sanskrit, Hindi, Hinglish and English with meaning and explanation.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gita – Modern Reader</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif+Devanagari:wght@600&family=Noto+Sans+Devanagari:wght@400;600&display=swap">
+<style>
+:root{--bg:#F4EEE2;--tx:#2B2118;--mut:#6d6050;--pr:#9A6F2E;--ac:#5F7A5A;--gl:rgba(255,255,255,.55);--bd:rgba(80,60,30,.14);--o1:#e9b872;--o2:#9fb59a;--o3:#e8c9a0;--fs:18px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1118;--tx:#F3EBDD;--mut:#a69d8f;--pr:#E0B56B;--ac:#7FA0C8;--gl:rgba(24,33,46,.55);--bd:rgba(255,255,255,.1);--o1:#7a5a22;--o2:#27456b;--o3:#2f4a3a}}
+:root[data-theme="dark"]{--bg:#0C1118;--tx:#F3EBDD;--mut:#a69d8f;--pr:#E0B56B;--ac:#7FA0C8;--gl:rgba(24,33,46,.55);--bd:rgba(255,255,255,.1);--o1:#7a5a22;--o2:#27456b;--o3:#2f4a3a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 var(--fs)/1.7 Inter,sans-serif;overflow-x:hidden}
+.orbs{position:fixed;inset:0;z-index:-1;overflow:hidden}.orbs i{position:absolute;width:55vmax;height:55vmax;border-radius:50%;filter:blur(90px);opacity:.55;animation:dr 22s ease-in-out infinite alternate}
+.orbs i:nth-child(1){background:var(--o1);top:-20vmax;left:-10vmax}.orbs i:nth-child(2){background:var(--o2);right:-15vmax;top:10vmax;animation-delay:-8s}.orbs i:nth-child(3){background:var(--o3);bottom:-25vmax;left:20vmax;animation-delay:-14s}
+@keyframes dr{to{transform:translate(8vmax,6vmax) scale(1.15)}}
+.g{background:var(--gl);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px) saturate(1.4);border:1px solid var(--bd);border-radius:26px;box-shadow:0 10px 40px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.25)}
+.dock{position:fixed;left:16px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;padding:10px;z-index:9;border-radius:30px}
+.dock a,.dock button{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:var(--mut);background:none;border:0;cursor:pointer;transition:.25s}
+.dock a:hover,.dock button:hover{background:var(--pr);color:var(--bg);transform:scale(1.1)}
+.dock svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+main{max-width:1000px;margin:0 auto;padding:0 20px 80px}
+section{padding:70px 0 10px}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;gap:26px}
+.eyebrow{font:600 clamp(18px,3vw,24px) 'Noto Serif Devanagari',serif;color:var(--pr)}
+h1{font-size:clamp(40px,8vw,84px);line-height:1.05;margin:0;font-weight:700;letter-spacing:-.03em}
+h1 span{display:inline-block;opacity:0;transform:translateY(40px);filter:blur(10px);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*.09s + .1s)}
+@keyframes up{to{opacity:1;transform:none;filter:none}}
+.sub{max-width:520px;color:var(--mut);margin:0}
+.row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{background:var(--pr);color:var(--bg);border:0;border-radius:999px;padding:14px 28px;font:600 16px Inter;text-decoration:none;cursor:pointer;transition:.3s;box-shadow:0 8px 30px color-mix(in srgb,var(--pr) 45%,transparent)}.btn:hover{transform:translateY(-3px)}
+.float{max-width:420px;padding:22px 26px;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.lbl{font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+.sa{font:600 calc(var(--fs)*1.35)/1.95 'Noto Serif Devanagari',serif}
+h2{font-size:clamp(28px,5vw,44px);margin:0 0 24px;letter-spacing:-.02em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.ch{position:relative;text-align:left;padding:20px;color:var(--tx);cursor:pointer;font:inherit;overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.ch::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0),color-mix(in srgb,var(--pr) 28%,transparent),transparent 60%);opacity:0;transition:.3s}.ch:hover::before{opacity:1}.ch:hover{transform:translateY(-6px)}
+.ch b{display:block;font-size:44px;line-height:1;color:var(--pr);opacity:.9}.ch span{display:block;margin-top:10px;font-weight:500}.ch small{color:var(--mut)}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--d,0)*40ms)}.rv.show{opacity:1;transform:none}
+.reader{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:860px){.reader{grid-template-columns:1.1fr 1fr}}
+.stage{padding:30px;animation-duration:.6s;animation-fill-mode:both;animation-timing-function:cubic-bezier(.2,.8,.2,1)}
+.inr{animation-name:inr}.inl{animation-name:inl}
+@keyframes inr{from{opacity:0;transform:translateX(60px);filter:blur(10px)}}@keyframes inl{from{opacity:0;transform:translateX(-60px);filter:blur(10px)}}
+.vid{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.sa.big{text-align:center;white-space:pre-line;padding:10px 0}
+.seg{position:relative;display:grid;grid-template-columns:repeat(3,1fr);padding:5px;border-radius:999px;margin-bottom:16px}
+.seg i{position:absolute;top:5px;bottom:5px;left:5px;width:calc((100% - 10px)/3);background:var(--pr);border-radius:999px;transition:transform .4s cubic-bezier(.3,1.3,.5,1)}
+.seg button{position:relative;z-index:1;background:none;border:0;padding:10px;font:500 14px Inter;color:var(--mut);cursor:pointer;transition:color .3s}.seg button.on{color:var(--bg)}
+.txt{min-height:90px}.hi{font-family:'Noto Sans Devanagari',sans-serif}
+.ex{margin-top:18px;padding-top:16px;border-top:1px solid var(--bd);color:var(--mut)}
+.tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:18px}
+.chip{background:none;border:1px solid var(--bd);color:var(--tx);border-radius:999px;padding:8px 16px;font:500 14px Inter;cursor:pointer;transition:.25s}.chip:hover{background:var(--pr);color:var(--bg)}
+.ring{width:56px;height:56px}.ring circle{fill:none;stroke-width:5}.ring .t{stroke:var(--bd)}.ring .p{stroke:var(--pr);stroke-linecap:round;transition:stroke-dashoffset .8s}
+.note{font-size:14px;color:var(--mut);padding:16px 20px;margin-top:20px}
+@media(max-width:759px){.dock{left:50%;top:auto;bottom:calc(12px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);flex-direction:row}main{padding-bottom:110px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 span,.rv{opacity:1;transform:none;filter:none}}
+
+.g:not(.dock){position:relative}.g{overflow:hidden}
+.g::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(420px circle at var(--lx,30%) var(--ly,0%),rgba(255,255,255,.2),transparent 55%),linear-gradient(135deg,rgba(255,255,255,.2),transparent 35%,transparent 70%,rgba(255,255,255,.07))}
+@keyframes morph{50%{border-radius:42% 58% 63% 37%/45% 35% 65% 55%}}
+.orbs i{animation:dr 22s ease-in-out infinite alternate,morph 12s ease-in-out infinite}
+#blob{position:fixed;left:0;top:0;width:340px;height:340px;margin:-170px 0 0 -170px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--pr) 45%,transparent),transparent 65%);filter:blur(30px);pointer-events:none;z-index:-1;opacity:.7;animation:morph 7s ease-in-out infinite}
+@media(hover:none){#blob{display:none}}
+#sp{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--pr),var(--ac));transform-origin:0 0;transform:scaleX(0);z-index:30}
+.dock .on{background:var(--pr);color:var(--bg);animation:morph 4s ease-in-out infinite}
+.chip,.btn{position:relative;overflow:hidden;isolation:isolate}
+.chip::before{content:"";position:absolute;left:-10%;right:-10%;top:100%;height:240%;background:var(--pr);border-radius:42%;transition:top .7s cubic-bezier(.2,.8,.2,1),transform 6s linear;z-index:-1}
+.chip:hover{background:none;color:var(--bg)}.chip:hover::before{top:-70%;transform:rotate(200deg)}
+.stage>*{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}.stage>:nth-child(2){animation-delay:.1s}.stage>:nth-child(3){animation-delay:.2s}.stage>:nth-child(4){animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(18px);filter:blur(6px)}}
+.ln{display:block;animation:rise 1s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--n)*.16s + .25s)}
+.sm{position:fixed;inset:0;z-index:20;display:grid;place-items:start center;padding:12vh 16px 0;background:rgba(0,0,0,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}.sm[hidden]{display:none}
+.sbox{width:min(640px,100%);padding:14px;animation:pop .5s cubic-bezier(.3,1.4,.5,1)}
+@keyframes pop{from{opacity:0;transform:scale(.9) translateY(-24px);filter:blur(10px)}}
+#sq{width:100%;background:none;border:0;border-bottom:1px solid var(--bd);color:var(--tx);font:500 20px Inter,sans-serif;padding:14px 10px;outline:none}
+#sr{max-height:50vh;overflow:auto;padding-top:8px}.sg{display:flex;flex-wrap:wrap;gap:8px;padding:10px}.em{padding:14px 10px;color:var(--mut);margin:0}
+.it{display:block;width:100%;text-align:left;background:none;border:0;color:var(--tx);padding:12px 14px;border-radius:18px;cursor:pointer;font:inherit;transition:background .25s,transform .25s}.it small{display:block;color:var(--mut);font-size:14px;line-height:1.4}
+.it:hover,.it.on{background:color-mix(in srgb,var(--pr) 20%,transparent);transform:translateX(4px)}
+.hint{font-size:12px;color:var(--mut);padding:8px 10px 0}
+.exb{max-height:260px;overflow:auto}.exb.open{max-height:none}.exb p{margin:0 0 .7em}.tr{white-space:pre-line;color:var(--mut);font-style:italic;text-align:center;font-size:.85em;margin-top:6px}
+.cb{position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--pr),var(--ac));transition:width .8s}
+.pcs{font:500 14px Inter,sans-serif;color:var(--mut);margin-left:10px;letter-spacing:0}
+#toast{position:fixed;left:50%;top:calc(18px + env(safe-area-inset-top,0px));transform:translate(-50%,-30px);opacity:0;padding:10px 20px;border-radius:999px;z-index:40;font-size:14px;pointer-events:none;transition:.4s cubic-bezier(.3,1.4,.5,1)}#toast.show{opacity:1;transform:translate(-50%,0)}
+.sa.big{font-size:clamp(18px,calc(var(--fs)*1.35),34px);overflow-wrap:anywhere}
+@media(min-width:760px) and (max-width:1100px){main{padding-left:92px}}
+</style><script>try{var _t=JSON.parse(localStorage.getItem("gita:theme"));if(_t==="light"||_t==="dark")document.documentElement.dataset.theme=_t}catch(e){}</script></head><body>
+<div id="sp"></div><div id="blob"></div>
+<div class="orbs"><i></i><i></i><i></i></div>
+<nav class="dock g" aria-label="Main">
+<a href="#top" aria-label="Home"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg></a>
+<a href="#chapters" aria-label="Chapters"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></a>
+<a href="#reader" aria-label="Reader"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h13v17H6a2 2 0 00-2 2zM4 19a2 2 0 012-2h13"/></svg></a>
+<button id="sb" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+<button id="th" aria-label="Theme badlo"><svg viewBox="0 0 24 24"><path d="M21 13A9 9 0 1111 3a7 7 0 0010 10z"/></svg></button>
+</nav>
+<div id="toast" class="g" role="status" aria-live="polite"></div>
+<div class="sm" id="sm" hidden><div class="g sbox" role="dialog" aria-modal="true" aria-label="Search"><input id="sq" type="search" placeholder="Search: 2.47, karma, peace, कर्म, chapter 4" autocomplete="off"><div id="sr"></div><div class="hint">↑ ↓ Enter · Esc band karne ke liye</div></div></div>
+<main id="top">
+<section class="hero" data-s="0">
+<div class="eyebrow">श्रीमद्भगवद्गीता</div>
+<h1 id="h1"></h1>
+<p class="sub">Sanskrit, Hindi, Hinglish aur English mein, har shloka ka matlab aur saaf explanation ke saath. Shaant, seedha, aur padhne mein aasaan.</p>
+<div class="row"><a class="btn" href="#reader">Start Reading</a><button class="chip" id="hs" style="padding:14px 24px">Search · /</button><button class="chip" id="rs" hidden style="padding:14px 24px"></button><div class="g float"><div class="lbl">Daily Shloka · 2.47</div><div class="sa" style="font-size:20px;line-height:1.8">कर्मण्येवाधिकारस्ते<br>मा फलेषु कदाचन ।</div></div></div>
+</section>
+<section id="chapters" data-s="1"><h2>18 Chapters</h2><div class="grid" id="grid"></div></section>
+<section id="reader" data-s="2"><h2>Reader <small id="pc" class="pcs"></small></h2>
+<div class="reader">
+<div class="g stage" id="s1"></div>
+<div><div class="g seg" id="seg" role="tablist"><i id="pill"></i></div><div class="g stage" id="s2"></div></div>
+</div>
+<div class="g note">Sanskrit: traditional text. Hindi: Swami Ramsukhdas. English and explanation: Swami Sivananda. Hinglish: Hindi ka automatic Roman conversion, isliye spelling kabhi-kabhi alag ho sakti hai. Data: github.com/gita/gita. Total 701 shlokas (Gita Press edition, jisme 13.1 shamil hai).<br><button class="chip" id="rz" style="margin-top:10px">Saved progress reset karo</button></div>
+</section>
+</main>
+<script src="data/verses.js"></script>
+<script>
+var CH=GITA.CH,V=GITA.V;
+function sg(k){try{return JSON.parse(localStorage.getItem("gita:"+k))}catch(e){return null}}
+function sset(k,v){try{localStorage.setItem("gita:"+k,JSON.stringify(v))}catch(e){}}
+var CM={"क":"k","ख":"kh","ग":"g","घ":"gh","ङ":"n","च":"ch","छ":"chh","ज":"j","झ":"jh","ञ":"n","ट":"t","ठ":"th","ड":"d","ढ":"dh","ण":"n","त":"t","थ":"th","द":"d","ध":"dh","न":"n","प":"p","फ":"ph","ब":"b","भ":"bh","म":"m","य":"y","र":"r","ल":"l","व":"v","श":"sh","ष":"sh","स":"s","ह":"h","ळ":"l"},
+NK={"ड":"r","ढ":"rh","क":"q","ख":"kh","ग":"g","ज":"z","फ":"f"},
+IV={"अ":"a","आ":"a","इ":"i","ई":"i","उ":"u","ऊ":"u","ऋ":"ri","ए":"e","ऐ":"ai","ओ":"o","औ":"au","ऑ":"o"},
+MT={"ा":"a","ि":"i","ी":"i","ु":"u","ू":"u","ृ":"ri","े":"e","ै":"ai","ो":"o","ौ":"au","ॉ":"o"},
+DG={"०":"0","१":"1","२":"2","३":"3","४":"4","५":"5","६":"6","७":"7","८":"8","९":"9"};
+function romWord(w){var u=[],i=0,c,k;
+function cons(){var x=w[i++],r=CM[x];if(w[i]==="\u093C"){i++;r=NK[x]||r}return r}
+while(i<w.length){c=w[i];
+if(IV[c]){u.push({c:"",v:IV[c],s:""});i++}
+else if(CM[c]){var un={c:cons(),v:null,s:"",n:1};
+while(w[i]==="\u094D"&&CM[w[i+1]]){i++;un.c+=cons();un.n++}
+if(w[i]==="\u094D"){i++;un.v=""}else if(MT[w[i]]){un.v=MT[w[i]];i++}
+if(un.c==="jn")un.c="gy";u.push(un)}
+else if(c==="ं"||c==="ँ"){if(u.length)u[u.length-1].s+="N";i++}
+else if(c==="ः"){if(u.length)u[u.length-1].s+="h";i++}
+else i++}
+for(k=u.length-1;k>=0;k--){var x=u[k];if(x.v!==null)continue;
+x.v=(!x.s&&u.length>1&&(k===u.length-1?!(x.n>1&&/y$/.test(x.c)):(k>0&&u[k+1].v!==""&&!(x.n===1&&u[k+1].n>1))))?"":"a"}
+return u.map(function(x,k){var n=u[k+1],s=x.s.replace("N",n&&/^[pbm]/.test(n.c)?"m":"n");return x.c+x.v+s}).join("")}
+function rom(s){s=s.normalize("NFD").replace(/[\u0901-\u0903\u0905-\u094D\u0958-\u0963]+/g,function(w){return w==="कृष्ण"?"krishna":romWord(w)});
+return s.replace(/\bmen\b/g,"mein").replace(/\bnahin\b/g,"nahi").replace(/[।॥]+/g,".").replace(/[०-९]/g,function(d){return DG[d]})}
+
+var LG=[["hi","Hindi"],["hn","Hinglish"],["en","English"]],lg=Math.min(2,Math.max(0,sg("lg")|0)),fs=Math.min(26,Math.max(15,sg("fs")|0||18)),last=0,BM=sg("bm")||[],RC=sg("rc")||[],RD=sg("read")||[],RDS={},tmr,opener,xo=0,i=Math.max(0,V.findIndex(function(x){return x.id===(sg("last")||"2.47")}));
+var $=function(x){return document.getElementById(x)},R=document.documentElement;
+$("h1").innerHTML="The Gita, in words you understand.".split(" ").map(function(w,n){return '<span style="--i:'+n+'">'+w+'</span> '}).join("");
+var TM=["system","light","dark"],tm=sg("theme"),TI={system:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',light:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',dark:'<path d="M21 13A9 9 0 1111 3a7 7 0 0010 10z"/>'};
+if(TM.indexOf(tm)<0)tm="system";
+function applyTheme(){if(tm==="system")delete R.dataset.theme;else R.dataset.theme=tm;$("th").innerHTML='<svg viewBox="0 0 24 24">'+TI[tm]+'</svg>';$("th").setAttribute("aria-label","Theme: "+tm+". Badalne ke liye dabao")}
+var tt;function toast(m){var e=$("toast");e.textContent=m;e.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){e.classList.remove("show")},1600)}
+$("th").onclick=function(){tm=TM[(TM.indexOf(tm)+1)%3];sset("theme",tm);applyTheme();toast("Theme: "+tm.charAt(0).toUpperCase()+tm.slice(1))};
+$("grid").innerHTML=CH.map(function(c,n){return '<button class="g ch rv" style="--d:'+n+'" data-n="'+(n+1)+'"><b>'+(n+1<10?"0":"")+(n+1)+'</b><span>'+c[0]+'</span><small>'+c[1]+' shlokas</small><i class="cb"></i></button>'}).join("");
+$("grid").addEventListener("pointermove",function(e){var b=e.target.closest(".ch");if(!b)return;var r=b.getBoundingClientRect();b.style.setProperty("--mx",e.clientX-r.left+"px");b.style.setProperty("--my",e.clientY-r.top+"px")});
+$("grid").onclick=function(e){var b=e.target.closest(".ch");if(!b)return;var n=+b.dataset.n,k=V.findIndex(function(v){return v.id.split(".")[0]==n});if(k<0){$("s1").className="g stage inr";$("s1").innerHTML='<div class="lbl">Chapter '+n+'</div><p>Is chapter ke shlokas abhi database mein add hone baaki hain.</p>'}else{go(k)}$("reader").scrollIntoView()};
+$("seg").insertAdjacentHTML("beforeend",LG.map(function(l,n){return '<button role="tab" data-n="'+n+'" class="'+(n===lg?"on":"")+'">'+l[1]+'</button>'}).join(""));
+$("seg").onclick=function(e){var b=e.target.closest("button");if(!b)return;lg=+b.dataset.n;sset("lg",lg);[].forEach.call($("seg").querySelectorAll("button"),function(x,n){x.classList.toggle("on",n===lg)});$("pill").style.transform="translateX("+lg*100+"%)";txt()};
+var COM={},tk=0;
+function esc(s){return String(s).replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+function load(c){return new Promise(function(ok){if(window.GCOM&&GCOM[c])return ok(GCOM[c]);var s=document.createElement("script");s.src="data/ch"+c+".js";s.onload=function(){ok(window.GCOM[c])};s.onerror=function(){ok(null)};document.head.appendChild(s)})}
+function para(t){return esc(t).split("\n").map(function(p){return "<p>"+p+"</p>"}).join("")}
+function txt(){var v=V[i],k=LG[lg][0],id=v.id.split("."),t=++tk,S=GITA.SRC,body=k==="hn"?rom(v.hi):v[k];
+$("s2").className="g stage "+(last>=0?"inr":"inl");
+$("s2").innerHTML='<div class="lbl">'+LG[lg][1]+' · '+(k==="en"?S.en:S.hi)+(k==="hn"?' (auto Roman)':'')+'</div><div class="txt '+(k==="hi"?"hi":"")+'" style="margin-top:8px">'+esc(body)+'</div><div class="ex"><div class="lbl">Explanation · '+(k==="en"?S.exen:S.exhi)+'</div><div id="exb" class="exb'+(xo?" open":"")+'"><p>Loading…</p></div><button class="chip" id="xp" style="margin-top:10px">'+(xo?"Collapse":"Expand")+'</button></div>';
+load(+id[0]).then(function(d){if(t!==tk)return;var e=d&&d[+id[1]-1],x=e?(k==="en"?e.en:k==="hn"?rom(e.hi):e.hi):"";$("exb").innerHTML=x?para(x):"<p>Explanation load nahi ho paayi.</p>"})}
+$("s2").onclick=function(e){var b=e.target.closest("#xp");if(!b)return;xo=$("exb").classList.toggle("open");b.textContent=xo?"Collapse":"Expand"};
+
+function draw(){var v=V[i],c=2*Math.PI*22,p=(i+1)/V.length;$("s1").className="g stage "+(last>=0?"inr":"inl");$("s1").innerHTML='<div class="vid"><div><div class="lbl">Shloka</div><b style="font-size:28px">'+v.id+'</b></div><svg class="ring" viewBox="0 0 56 56" aria-label="Progress '+(i+1)+' of '+V.length+'"><circle class="t" cx="28" cy="28" r="22"/><circle class="p" cx="28" cy="28" r="22" transform="rotate(-90 28 28)" stroke-dasharray="'+c+'" stroke-dashoffset="'+c*(1-p)+'"/></svg></div><div class="sa big" lang="sa">'+v.sa.split("\n").map(function(l,n){return '<span class="ln" style="--n:'+n+'">'+l+'</span>'}).join("")+'</div><div class="tr">'+esc(v.tr)+'</div><div class="tools"><button class="chip" id="pv">← Prev</button><button class="chip" id="nx">Next →</button><button class="chip" id="bk">'+(BM.indexOf(v.id)<0?"♡ Save":"♥ Saved")+'</button><button class="chip" id="cp">Copy</button><button class="chip" id="mi" aria-label="Font chhota">A−</button><button class="chip" id="pl" aria-label="Font bada">A+</button></div>';txt()}
+function ix(id){return V.findIndex(function(v){return v.id===id})}
+function prog(){var c={};$("pc").textContent=RD.length+" / "+V.length+" read";RD.forEach(function(x){var k=x.split(".")[0];c[k]=(c[k]||0)+1});[].forEach.call(document.querySelectorAll(".ch"),function(b,n){b.querySelector(".cb").style.width=(c[n+1]||0)/CH[n][1]*100+"%"})}
+function seen(){clearTimeout(tmr);var id=V[i].id;sset("last",id);RC=[id].concat(RC.filter(function(x){return x!==id})).slice(0,6);sset("rc",RC);tmr=setTimeout(function(){if(!RDS[id]){RDS[id]=1;RD.push(id);sset("read",RD);prog()}},2500)}
+function go(k){last=k-i||last;i=k;draw();seen()}
+$("s1").onclick=function(e){var b=e.target.closest("button");if(!b)return;if(b.id==="pv"&&i>0)go(i-1);else if(b.id==="nx"&&i<V.length-1)go(i+1);else if(b.id==="bk"){var id=V[i].id,x=BM.indexOf(id);if(x<0)BM.push(id);else BM.splice(x,1);sset("bm",BM);b.textContent=x<0?"♥ Saved":"♡ Save";toast(x<0?"Bookmark ho gaya":"Bookmark hata diya")}else if(b.id==="mi"||b.id==="pl"){fs=Math.min(26,Math.max(15,fs+(b.id==="pl"?1:-1)));R.style.setProperty("--fs",fs+"px");sset("fs",fs)}else if(b.id==="cp"){var t=V[i].sa+"\n\n"+V[i].en+"\n— Bhagavad Gita "+V[i].id;try{navigator.clipboard.writeText(t).then(function(){toast("Shloka copy ho gaya")},function(){toast("Copy nahi ho paaya")})}catch(x){toast("Copy nahi ho paaya")}}};
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target)}})},{threshold:.1});
+[].forEach.call(document.querySelectorAll(".rv"),function(el){io.observe(el)});
+var RS=[],sel=0,HAY;
+function nz(q){return q.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
+function chFirst(c){return V.findIndex(function(v){return v.id.split(".")[0]==c})}
+function openCh(n){$("grid").querySelector('[data-n="'+n+'"]').click()}
+function msg(t){$("s1").className="g stage inr";$("s1").innerHTML='<div class="lbl">'+t+'</div><p>Ye shloka is edition mein nahi hai.</p>'}
+function fnd(q){q=nz(q.trim());var out=[],m=q.match(/^(?:ch(?:apter)?\s*)?(\d{1,2})(?:[.:\s-]+(\d{1,3}))?$/),seen={};
+function add(o){if(!seen[o.t]){seen[o.t]=1;out.push(o)}}
+if(m){var c=+m[1],s=m[2];if(s){var k=V.findIndex(function(v){return v.id===c+"."+s});add(k>=0?{k:k,t:"Shloka "+c+"."+s,d:V[k].en}:{k:-1,t:"Shloka "+c+"."+s,d:"Ye shloka maujood nahi hai"})}else if(c>=1&&c<=18)add({k:chFirst(c),c:c,t:"Chapter "+c+" · "+CH[c-1][0],d:CH[c-1][1]+" shlokas"})}
+CH.forEach(function(c,n){if(nz(c[0]).indexOf(q)>-1)add({k:chFirst(n+1),c:n+1,t:"Chapter "+(n+1)+" · "+c[0],d:c[1]+" shlokas"})});
+if(!HAY)HAY=V.map(function(v){return nz([v.id,v.sa,v.tr,v.hi,rom(v.hi),v.en].join(" "))});HAY.forEach(function(h,k){if(h.indexOf(q)>-1)add({k:k,t:"Shloka "+V[k].id,d:V[k].en})});
+return out.slice(0,40)}
+function lst(a,p){return a.map(function(id){var k=ix(id);return k<0?null:{k:k,t:p+" Shloka "+id,d:V[k].en}}).filter(Boolean)}
+function its(a){return a.map(function(x,n){return '<button class="it'+(n?"":" on")+'" data-n="'+n+'"><b>'+x.t+'</b><small>'+esc(x.d)+'</small></button>'}).join("")}
+function sr(){var q=$("sq").value,r=q.trim()?fnd(q):null,h="",r0=[];
+if(!r){r0=lst(BM,"♥").concat(lst(RC.filter(function(x){return BM.indexOf(x)<0}),"↺")).slice(0,8);h=its(r0)+'<div class="sg">'+["karma","peace","fear","2.47","chapter 4"].map(function(x){return '<button class="chip" data-q="'+x+'">'+x+'</button>'}).join("")+'</div>'}
+else if(!r.length)h='<p class="em">Koi result nahi mila. Koi doosra shabd try karo.</p>';else h=its(r);
+$("sr").innerHTML=h;RS=r||r0;sel=0}
+function op(){opener=document.activeElement;$("sm").hidden=false;$("sq").value="";sr();$("sq").focus()}
+function cl(){if($("sm").hidden)return;$("sm").hidden=true;if(opener&&opener.focus)opener.focus()}
+function pick(x){cl();if(x.k>=0)go(x.k);else if(x.c)openCh(x.c);else msg(x.t);$("reader").scrollIntoView()}
+$("sb").onclick=op;$("hs").onclick=op;$("sq").oninput=sr;
+$("sm").onclick=function(e){if(e.target===$("sm"))cl()};
+$("sr").onclick=function(e){var c=e.target.closest("[data-q]");if(c){$("sq").value=c.dataset.q;sr();$("sq").focus();return}var b=e.target.closest(".it");if(b)pick(RS[+b.dataset.n])};
+$("sq").addEventListener("keydown",function(e){var b=$("sr").querySelectorAll(".it");if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();if(!b.length)return;sel=(sel+(e.key==="ArrowDown"?1:b.length-1))%b.length;[].forEach.call(b,function(x,n){x.classList.toggle("on",n===sel)})}else if(e.key==="Enter"&&RS[sel])pick(RS[sel])});
+addEventListener("keydown",function(e){var tg=document.activeElement.tagName,ty=/INPUT|TEXTAREA/.test(tg);if(e.key==="Escape")cl();else if(e.key==="/"&&$("sm").hidden&&!ty){e.preventDefault();op()}else if($("sm").hidden&&!ty&&!e.ctrlKey&&!e.metaKey&&!e.altKey){if(e.key==="ArrowRight"&&i<V.length-1)go(i+1);else if(e.key==="ArrowLeft"&&i>0)go(i-1)}});
+var bx=innerWidth/2,by=innerHeight/2,tx=bx,ty=by;
+addEventListener("pointermove",function(e){tx=e.clientX;ty=e.clientY;var g=e.target.closest&&e.target.closest(".g");if(g){var r=g.getBoundingClientRect();g.style.setProperty("--lx",e.clientX-r.left+"px");g.style.setProperty("--ly",e.clientY-r.top+"px")}});
+(function t(){bx+=(tx-bx)*.08;by+=(ty-by)*.08;$("blob").style.transform="translate("+bx+"px,"+by+"px)";requestAnimationFrame(t)})();
+addEventListener("scroll",function(){var h=R.scrollHeight-innerHeight;$("sp").style.transform="scaleX("+(h>0?scrollY/h:0)+")"},{passive:true});
+var da=document.querySelectorAll(".dock a"),ss=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var k=e.target.dataset.s;[].forEach.call(da,function(a,n){a.classList.toggle("on",n==k)})}})},{rootMargin:"-45% 0px -45% 0px"});
+[].forEach.call(document.querySelectorAll("[data-s]"),function(el){ss.observe(el)});
+R.style.setProperty("--fs",fs+"px");applyTheme();prog();$("pill").style.transform="translateX("+lg*100+"%)";
+if(sg("last")&&ix(sg("last"))>=0){$("rs").hidden=false;$("rs").textContent="Continue · "+sg("last");$("rs").onclick=function(){$("reader").scrollIntoView()}}
+$("rz").onclick=function(){var b=this;if(!b.dataset.c){b.dataset.c=1;b.textContent="Pakka? Dobara dabao";setTimeout(function(){delete b.dataset.c;b.textContent="Saved progress reset karo"},3000);return}["read","last","rc","bm","fs","lg","theme"].forEach(function(k){try{localStorage.removeItem("gita:"+k)}catch(e){}});location.reload()};
+draw();
+</script></body></html>
