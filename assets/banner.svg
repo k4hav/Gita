@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Gita Library: Bhagavad Gita in Sanskrit, Hindi, Hinglish and English">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10151E"/><stop offset="1" stop-color="#1C2635"/></linearGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F3D9A4"/><stop offset=".5" stop-color="#D5AD68"/><stop offset="1" stop-color="#F3D9A4"/></linearGradient>
+<linearGradient id="spec" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".6"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="55"/></filter>
+<clipPath id="clip"><rect width="1200" height="400" rx="28"/></clipPath>
+</defs>
+<style>
+text{font-family:'Noto Serif Devanagari','Mangal','Segoe UI',Arial,sans-serif}
+.o1{animation:f1 9s ease-in-out infinite alternate}.o2{animation:f2 11s ease-in-out infinite alternate}.o3{animation:f3 13s ease-in-out infinite alternate}
+@keyframes f1{to{transform:translate(120px,50px) scale(1.2)}}@keyframes f2{to{transform:translate(-140px,-40px) scale(1.15)}}@keyframes f3{to{transform:translate(90px,-60px) scale(1.25)}}
+.t{opacity:0;animation:up 1.2s cubic-bezier(.2,.8,.2,1) .2s forwards}.s{opacity:0;animation:up 1.2s cubic-bezier(.2,.8,.2,1) .6s forwards}.p{opacity:0;animation:up 1.2s ease 1s forwards}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.l{opacity:0;animation:cyc 12s ease-in-out infinite both}.l2{animation-delay:3s}.l3{animation-delay:6s}.l4{animation-delay:9s}
+@keyframes cyc{0%{opacity:0;transform:translateY(12px)}4%,22%{opacity:1;transform:none}27%,100%{opacity:0;transform:translateY(-8px)}}
+.sh{animation:sw 6s ease-in-out infinite alternate}@keyframes sw{from{transform:translateX(-120px);opacity:.3}to{transform:translateX(120px);opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.t,.s,.p,.l1{opacity:1}}
+</style>
+<g clip-path="url(#clip)">
+<rect width="1200" height="400" fill="url(#bg)"/>
+<g filter="url(#blur)"><circle class="o1" cx="200" cy="90" r="150" fill="#D5AD68" opacity=".55"/><circle class="o2" cx="1010" cy="320" r="170" fill="#7189A8" opacity=".55"/><circle class="o3" cx="600" cy="430" r="140" fill="#75816A" opacity=".5"/></g>
+<rect x="60" y="45" width="1080" height="310" rx="34" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".2" stroke-width="1.5"/>
+<rect class="sh" x="400" y="46" width="400" height="2" fill="url(#spec)"/>
+<text class="t" x="600" y="140" font-size="66" font-weight="700" text-anchor="middle" fill="url(#gold)">श्रीमद्भगवद्गीता</text>
+<text class="s" x="600" y="185" font-size="20" text-anchor="middle" fill="#F3EBDD" fill-opacity=".85" letter-spacing="6">MODERN LIQUID-GLASS READER</text>
+<g class="l l1" text-anchor="middle"><text x="600" y="245" font-size="13" fill="#7189A8" letter-spacing="4">SANSKRIT</text><text x="600" y="285" font-size="26" fill="#F3EBDD">कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।</text></g>
+<g class="l l2" text-anchor="middle"><text x="600" y="245" font-size="13" fill="#7189A8" letter-spacing="4">HINDI</text><text x="600" y="285" font-size="26" fill="#F3EBDD">तुम्हारा अधिकार केवल कर्म करने में है</text></g>
+<g class="l l3" text-anchor="middle"><text x="600" y="245" font-size="13" fill="#7189A8" letter-spacing="4">HINGLISH</text><text x="600" y="285" font-size="26" fill="#F3EBDD">Tumhara adhikar sirf karm karne mein hai</text></g>
+<g class="l l4" text-anchor="middle"><text x="600" y="245" font-size="13" fill="#7189A8" letter-spacing="4">ENGLISH</text><text x="600" y="285" font-size="26" fill="#F3EBDD">You have a right to action alone, never to its fruits.</text></g>
+<text class="p" x="600" y="330" font-size="13" text-anchor="middle" fill="#D5AD68" letter-spacing="4">701 SHLOKAS  ·  18 CHAPTERS  ·  4 LANGUAGES</text>
+</g>
+</svg>
